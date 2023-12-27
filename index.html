@@ -1,0 +1,2881 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- Mirrored from itweaker.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Oct 2019 05:08:54 GMT -->
+
+<!-- Mirrored from getyourhack.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 May 2020 11:35:36 GMT -->
+
+<!-- Mirrored from myappplug.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Dec 2023 16:45:59 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#2196f3">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="icons/site.html">
+<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="icons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Ignition">
+<meta name="application-name" content="Ignition">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="icons/browserconfig.html">
+<title>Appclone</title>
+
+<meta name="description" content="Ignition is the #1 iOS 3rd Party AppStore that cares about its users.">
+<meta name="image" content="banner.html">
+
+<meta itemprop="name" content="Ignition Installer">
+<meta itemprop="description" content="Ignition is the #1 iOS 3rd Party AppStore that cares about its users.">
+<meta itemprop="image" content="banner.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ignition Installer">
+<meta name="twitter:description" content="Ignition is the #1 iOS 3rd Party AppStore that cares about its users.">
+<meta name="twitter:image:src" content="twitter.html">
+
+<meta name="og:title" content="Ignition Installer">
+<meta name="og:description" content="Ignition is the #1 iOS 3rd Party AppStore that cares about its users.">
+<meta name="og:image" content="facebook.html">
+<meta name="og:site_name" content="Ignition Installer">
+<meta name="og:type" content="website">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<link rel="stylesheet" href="framework7/css/framework7.min.css">
+<link rel="stylesheet" href="css/icons.css">
+<link rel="stylesheet" href="css/appdeb2deb2deb2deb2.css?v1=2">
+<script type="text/javascript" src="js/inobounce.html"></script>
+<script type="text/javascript">
+    iNoBounce.enable();
+  </script>
+
+<style type="text/css">
+    .ignitionIcon {
+      /*-webkit-animation: breathing 4s ease-out infinite normal;*/
+      /*animation: breathing 4s ease-out infinite normal;*/
+    }
+
+    .ignitionText {
+      margin-top: 10px;
+      animation: move 2s linear infinite;
+      background-image: linear-gradient(to right, #fe8a71, #f6cd61, #3da4ab, #0e9aa7, #fe8a71);
+      background-size: 200% auto;
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @keyframes move { to { background-position: 200% center; } }
+
+    @-webkit-keyframes breathing {
+      0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+
+      25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+
+      100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+
+    @keyframes breathing {
+      0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+
+      25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+      }
+
+      60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+
+      100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    }
+
+  </style>
+
+</head>
+<body class="theme-dark">
+<div id="app">
+
+<div class="statusbar"></div>
+
+<div class="panel panel-left panel-cover theme-dark">
+<div class="view">
+<div class="page">
+<div class="navbar">
+<div class="navbar-inner">
+<div class="title">Left Panel</div>
+</div>
+</div>
+<div class="page-content">
+<div class="block">Left panel content goes here</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel panel-right panel-reveal theme-dark">
+<div class="view">
+<div class="page">
+<div class="navbar">
+<div class="navbar-inner">
+<div class="title">Right Panel</div>
+</div>
+</div>
+<div class="page-content">
+<div class="block">Right panel content goes here</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="views tabs ios-edges">
+
+<div class="toolbar tabbar tabbar-labels toolbar-bottom-md">
+<div class="toolbar-inner">
+<a href="#view-home" class="tab-link tab-link-active">
+<img class="icon ios-only" src="img/home-grey.png" width="26px" height="26px">
+<img class="icon ios-only icon-ios-fill" src="img/home-blue.png" width="26px" height="26px">
+
+
+</a>
+
+
+
+
+</div>
+</div>
+
+<div id="view-home" class="view view-main tab tab-active">
+
+<div class="page" data-name="home">
+
+<div class="navbar">
+<div class="navbar-inner">
+
+<div class="title sliding">Home</div>
+<div class="right">
+<div class="chip" style="font-weight: 500;">
+<div class="chip-media bg-color-blue">
+<img src="img/Revokes.png" width="24px" height="24px" style="border-radius: 50%;">
+</div>
+<div class="chip-label status">Signed</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="page-content">
+<div class="block">
+<center>
+<img src="img/ignitionLogo.svg" width="60px" class="ignitionIcon">
+<h1 class="ignitionText">Appclone</h1>
+</center>
+</div>
+
+
+
+<form class="searchbar" style="background-color: #1d1d27;">
+								<div class="searchbar-inner" style="padding: 0 8px;">
+									<div class="searchbar-input-wrap" style="height: 32px;">
+										<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" style="background-color: #15151e;color: #fff;" title="Type in a name">
+							      		<i class="searchbar-icon" style="
+									width: 13px;
+									height: 13px;
+									position: absolute;
+									top: 50%;
+									margin-top: -6px;
+									background-size: 13px 13px;
+									z-index: 40;
+									left: 8px;
+								"></i>
+										<span class="input-clear-button"></span>
+							    	</div>
+							    	
+							  	</div>
+							</form>
+
+
+
+<div class="list">
+<ul id="myUL">
+
+  <li>
+    <a href="snapsight.html" class="external item-link item-content">
+    <div class="item-media"><img src="img/snapzzy.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+    <div class="item-inner">
+    <div class="item-title">
+    <div class="item-header">snapsight</div>
+snapchat spy app...
+    <div class="item-footer">No Jailbreak or Root Required</div>
+    </div>
+    <div class="item-after"></div>
+    </div>
+    </a>
+    </li>
+	 <li>
+        <a href="galaxy%20swapper%20v3.html" class="external item-link item-content">
+        <div class="item-media"><img src="img/Tembot.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+        <div class="item-inner">
+        <div class="item-title">
+        <div class="item-header">Tembot</div>
+        Temu New Refferal Generator
+        <div class="item-footer">No Jailbreak Required</div>
+        </div>
+        <div class="item-after"></div>
+        </div>
+        </a>
+        </li>
+	  <li>
+    <a href="cribs%20tv.html" class="external item-link item-content">
+    <div class="item-media"><img src="img/20231019_081413_0000.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+    <div class="item-inner">
+    <div class="item-title">
+    <div class="item-header">cribs tv</div>
+all your streams filtered
+    <div class="item-footer">No Jailbreak or Root Required</div>
+    </div>
+    <div class="item-after"></div>
+    </div>
+    </a>
+    </li>
+    <li>
+      <a href="robux%20unlimited.html" class="external item-link item-content">
+      <div class="item-media"><img src="img/c69bcfff9e15db1936ca269c244b9624.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+      <div class="item-inner">
+      <div class="item-title">
+      <div class="item-header">robux heist</div>
+      unlimited robux Downloadable For iOS and android...
+      <div class="item-footer">No Jailbreak Required</div>
+      </div>
+      <div class="item-after"></div>
+      </div>
+      </a>
+      </li>
+      <li>
+        <a href="fc24%20mod.html" class="external item-link item-content">
+        <div class="item-media"><img src="img/download%20(4).jpg" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+        <div class="item-inner">
+        <div class="item-title">
+        <div class="item-header">fc24 inject</div>
+        fc24 mobile mod Downloadable For iOS and android...
+        <div class="item-footer">No Jailbreak Required</div>
+        </div>
+        <div class="item-after"></div>
+        </div>
+        </a>
+        </li>
+<li>
+<a href="75Hard.html" class="external item-link item-content">
+<div class="item-media"><img src="img/75Hard.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">75Hard</div>
+75Hard Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="DarkSkyWeather.html" class="external item-link item-content">
+<div class="item-media"><img src="img/DarkSkyWeather.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Dark Sky Weather</div>
+Dark Sky Weather Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="Facetune.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Facetune.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Facetune</div>
+Facetune Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="GoodNotes5.html" class="external item-link item-content">
+<div class="item-media"><img src="img/GoodNotes5.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">GoodNotes 5</div>
+GoodNotes 5 Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="HotSchedules.html" class="external item-link item-content">
+<div class="item-media"><img src="img/HotSchedules.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Hot Schedules</div>
+Hot Schedules Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="Necrophonic.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Necrophonic.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Necrophonic</div>
+Necrophonic Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="ProCamerabyMoment.html" class="external item-link item-content">
+<div class="item-media"><img src="img/ProCamerabyMoment.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Pro Camera by Moment</div>
+Pro Camera by Moment Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="RarevisionVH.html" class="external item-link item-content">
+<div class="item-media"><img src="img/RarevisionVH.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">RarevisionVH</div>
+RarevisionVH Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="Shadowrocket.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Shadowrocket.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Shadowrocket</div>
+Shadowrocket Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="SkyView.html" class="external item-link item-content">
+<div class="item-media"><img src="img/SkyView.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">SkyView</div>
+SkyView Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="TocaLifeNeighborhood.html" class="external item-link item-content">
+<div class="item-media"><img src="img/TocaLifeNeighborhood.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TocaLife Neighborhood</div>
+TocaLife Neighborhood Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="60seconds.html" class="external item-link item-content">
+<div class="item-media"><img src="img/60seconds.html" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">60 Seconds Atomic Adventure</div>
+60 Seconds Atomic Adventure Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="TouchRetouch.html" class="external item-link item-content">
+<div class="item-media"><img src="img/TouchRetouch.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TouchRetouch</div>
+TouchRetouch Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="DeadCells.html" class="external item-link item-content">
+<div class="item-media"><img src="img/DeadCells.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Dead Cells</div>
+Dead Cells Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="EarntoDie.html" class="external item-link item-content">
+<div class="item-media"><img src="img/EarntoDie.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Earn to Die</div>
+Earn to Die Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="EarntoDie2.html" class="external item-link item-content">
+<div class="item-media"><img src="img/EarntoDie2.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Earn to Die 2</div>
+Earn to Die 2 Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="FiveNightsatFreddy.html" class="external item-link item-content">
+<div class="item-media"><img src="img/FiveNightsatFreddy.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">FiveNight sat Freddy</div>
+FiveNight sat Freddy Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="GeometryDash.html" class="external item-link item-content">
+<div class="item-media"><img src="img/GeometryDash.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Geometry Dash</div>
+Geometry Dash Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="GrandTheftAutoViceCity.html" class="external item-link item-content">
+<div class="item-media"><img src="img/GrandTheftAutoViceCity.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">GrandTheft Auto ViceCity</div>
+GrandTheft Auto ViceCity Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="GrandTheftAutoSanAndreas.html" class="external item-link item-content">
+<div class="item-media"><img src="img/GrandTheftAutoSanAndreas.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">GrandTheft Auto SanAndreas</div>
+GrandTheft Auto SanAndreas Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="headsup.html" class="external item-link item-content">
+<div class="item-media"><img src="img/headsup.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Headsup</div>
+Headsup Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="Incredibox.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Incredibox.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Incredibox</div>
+Incredibox Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="InfiniteFlightSimulator.html" class="external item-link item-content">
+<div class="item-media"><img src="img/InfiniteFlightSimulator.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Infinite Flight Simulator</div>
+Infinite Flight Simulator Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="monopol.html" class="external item-link item-content">
+<div class="item-media"><img src="img/monopol.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">monopol</div>
+monopol Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="PapaPizzeriaToGo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/PapaPizzeriaToGo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Papa's Pizzeria ToGo</div>
+Papa's Pizzeria ToGo Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="PapaWingeriaToGo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/PapaWingeriaToGo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Papa's Wingeria ToGo</div>
+Papa's Wingeria ToGo Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="PlagueInc.html" class="external item-link item-content">
+<div class="item-media"><img src="img/PlagueInc.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">PlagueInc</div>
+PlagueInc Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="Pou.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Pou.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Pou</div>
+Pou Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="StardewValley.html" class="external item-link item-content">
+<div class="item-media"><img src="img/StardewValley.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Stardew Valley</div>
+Stardew Valley Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="Terraria.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Terraria.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Terraria</div>
+Terraria Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="TheGameofLife.html" class="external item-link item-content">
+<div class="item-media"><img src="img/TheGameofLife.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">The Game of Life</div>
+The Game of Life Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="trueskate.html" class="external item-link item-content">
+<div class="item-media"><img src="img/trueskate.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">trueskate</div>
+trueskate Downloadable For iOS...
+<div class="item-footer">No Jailbreak Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="tapread.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tapread.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TapRead</div>
+TapRead App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="clipclaps.html" class="external item-link item-content">
+<div class="item-media"><img src="img/clipclaps.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">ClipClaps</div>
+ClipClaps App Unlimited ClapCoins for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="wink.html" class="external item-link item-content">
+<div class="item-media"><img src="img/wink.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Wink</div>
+Wink App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mico.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mico.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Mico</div>
+Mico App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="olive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/olive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Olive</div>
+Olive Live Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="joy.html" class="external item-link item-content">
+<div class="item-media"><img src="img/joy.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Joy Live</div>
+Joy Live Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="domino.html" class="external item-link item-content">
+<div class="item-media"><img src="img/domino.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Domino QiuQiu</div>
+Domino QiuQiu Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="sugarlive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/sugarlive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">SugarLive</div>
+SugarLive App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="facecast.html" class="external item-link item-content">
+<div class="item-media"><img src="img/facecast.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">FaceCast</div>
+FaceCast App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="boomlive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/boomlive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">BoomLive</div>
+BoomLive App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="nonolive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/nonolive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">NoNoLive</div>
+Nonolive App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mangolive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mangolive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">MangoLive</div>
+MangoLive App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="ibiza.html" class="external item-link item-content">
+<div class="item-media"><img src="img/ibiza.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">IBIZA</div>
+IBIZA App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="cuteu.html" class="external item-link item-content">
+<div class="item-media"><img src="img/cuteu.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">CuteU</div>
+CuteU App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="fancyu.html" class="external item-link item-content">
+<div class="item-media"><img src="img/fancyu.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">FancyU</div>
+FancyU App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="gaga.html" class="external item-link item-content">
+<div class="item-media"><img src="img/gaga.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">GaGa</div>
+GaGa App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="lamour.html" class="external item-link item-content">
+<div class="item-media"><img src="img/lamour.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Lamour</div>
+Lamour App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="lemeet.html" class="external item-link item-content">
+<div class="item-media"><img src="img/lemeet.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Lemeet</div>
+Lemeet App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="meetu.html" class="external item-link item-content">
+<div class="item-media"><img src="img/meetu.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">MeetU</div>
+MeetU App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="peach.html" class="external item-link item-content">
+<div class="item-media"><img src="img/peach.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Peach</div>
+Peach App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="popchat.html" class="external item-link item-content">
+<div class="item-media"><img src="img/popchat.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">PopChat</div>
+PopChat App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="strangr.html" class="external item-link item-content">
+<div class="item-media"><img src="img/strangr.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Strangr</div>
+Strangr App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="veybo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/veybo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Veybo</div>
+Veybo App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="whatslive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/whatslive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">WhatsLive</div>
+WhatsLive App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="yumy.html" class="external item-link item-content">
+<div class="item-media"><img src="img/yumy.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Yumy</div>
+Yumy App Unlimited Resources for iOS or Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="amongus.html" class="external item-link item-content">
+<div class="item-media"><img src="img/among.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Among Us++</div>
+Among Us Free Skins - Among Us Hack Imposter Mod iOS Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="zepeto.html" class="external item-link item-content">
+<div class="item-media"><img src="img/zepeto.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Zepeto MOD</div>
+Zepeto Unlimited Coins and Gems...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="azar.html" class="external item-link item-content">
+<div class="item-media"><img src="img/azar.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Azar</div>
+Get Free Gems in Azar app 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="music.html" class="external item-link item-content">
+<div class="item-media"><img src="img/music.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Music++</div>
+Music++ V1.2 Free Apple Music...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mcjava.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mcjava.jpg" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Minecraft Java</div>
+iOS & Android Download Free...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mcd.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mcd.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Minecraft Dungeons</div>
+iOS & Android Download Free...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="cotomovie.html" class="external item-link item-content">
+<div class="item-media"><img src="img/cotomovie.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">CotoMovies++</div>
+CotoMovies Premium...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mediabox.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mediabox.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">MediaBox HD</div>
+Mediabox HD VIP...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="tutuapp.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tutuapp.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TuTuApp VIP</div>
+Free TuTuApp VIP...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="pandahelper.html" class="external item-link item-content">
+<div class="item-media"><img src="img/pandahelper.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Panda Helper VIP</div>
+Free Panda Helper VIP...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="gta5.html" class="external item-link item-content">
+<div class="item-media"><img src="img/gtav.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">GTA5</div>
+Play GTA 5 on Your Phone...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="showbox.html" class="external item-link item-content">
+<div class="item-media"><img src="img/showbox.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Showbox</div>
+Moviebox Pro VIP (New Showbox)...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="tweakbox.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tweakbox.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TweakBox++</div>
+Custom Server + Anti Revoke...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="popcorn.html" class="external item-link item-content">
+<div class="item-media"><img src="img/popcorn.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Popcorn Time</div>
+Watch Free Unlimited Movies...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="disney.html" class="external item-link item-content">
+<div class="item-media"><img src="img/disney.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Disney++</div>
+Free Disney Plus...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="omegle.html" class="external item-link item-content">
+<div class="item-media"><img src="img/omegle.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Omegle++</div>
+Omegle Mobile Video enabled...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="wifi.html" class="external item-link item-content">
+<div class="item-media"><img src="img/wifi.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">WiFi Passwords</div>
+Expose Nearby WiFi Passwords...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="cydia.html" class="external item-link item-content">
+<div class="item-media"><img src="img/cydia.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Cydia</div>
+Cydia Rootjack IOS 12 & 13.5.1
+<div class="item-footer">LPTweak Team!</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="pandora.html" class="external item-link item-content">
+<div class="item-media"><img src="img/pandora.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Pandora++</div>
+Free Pandora Premium...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="yubo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/yubo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Yubo++</div>
+Free Power Pack, Unlimited Powers & Auto Swipe...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="adorable.html" class="external item-link item-content">
+<div class="item-media"><img src="img/adorable.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Adorable Home++</div>
+Unlimited Hearts/Love + Free In-App Items...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="happymod.html" class="external item-link item-content">
+<div class="item-media"><img src="img/happymod.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">HappyMod++</div>
+Download Modded Apps on IOS Android...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="yee.html" class="external item-link item-content">
+<div class="item-media"><img src="img/yee.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Yee</div>
+See & Unblur Answers...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="chegg.html" class="external item-link item-content">
+<div class="item-media"><img src="img/chegg.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Chegg++</div>
+See & Unblur Answers...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="cinemahd.html" class="external item-link item-content">
+<div class="item-media"><img src="img/cinemahd.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Cinemahd</div>
+Stream Movies & TV Shows Showbox Alternative...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="whatsapp.html" class="external item-link item-content">
+<div class="item-media"><img src="img/whatsapp.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Whatsap++</div>
+WhatsApp++ Phantom V2.0...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="faceapp.html" class="external item-link item-content">
+<div class="item-media"><img src="img/faceapp.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">FaceApp Pro</div>
+Unlock Pro For Free...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="yolo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/yolo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">YOLO++</div>
+Reveal All Usernames...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="enlight.html" class="external item-link item-content">
+<div class="item-media"><img src="img/enlight.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Enlight Pixaloop</div>
+Enlight Pixaloop - Photo Animator & Photo Editor...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="alight.html" class="external item-link item-content">
+<div class="item-media"><img src="img/alight.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Alight Motion++</div>
+Alight Motion++...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="crunchyroll.html" class="external item-link item-content">
+<div class="item-media"><img src="img/ccr.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Crunchyroll++</div>
+Watch most popular anime with Crunchyroll++...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="minecraft.html" class="external item-link item-content">
+<div class="item-media"><img src="img/minecraft.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Minecraft</div>
+Download Minecraft PE on your iOs & Android Device
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="cashapp.html" class="external item-link item-content">
+<div class="item-media"><img src="img/cashapp.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Cash App++</div>
+Free Money and Free Bitcoin
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="onlyfan.html" class="external item-link item-content">
+<div class="item-media"><img src="img/onlyfan.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">OnlyFans++</div>
+Free OnlyFans Premium Unlimited Features.
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="grindr.html" class="external item-link item-content">
+<div class="item-media"><img src="img/grindr.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Grindr++</div>
+Free Grindr Xtra, Free Grindr Premium Unlimited XTRA
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="soundcloud.html" class="external item-link item-content">
+<div class="item-media"><img src="img/soundcloud.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">SoundCloud++</div>
+No ads, listen to music offline, no country restrictions and more.
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="tinder.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tinder.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Tinder++</div>
+All Tinder Gold features, auto like, swipe to go back and more.
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="lucky.html" class="external item-link item-content">
+<div class="item-media"><img src="img/lucky.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Lucky Patcher</div>
+Mod and patch any app or game...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="videostar.html" class="external item-link item-content">
+<div class="item-media"><img src="img/videostar.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Video Star++</div>
+Free Video Star++ All Access Pass - Videostar All Effects...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="duolingo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/duolingo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Duolingo++</div>
+Free Duolingo++ Unlimited Hearts & Skill...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="discord.html" class="external item-link item-content">
+<div class="item-media"><img src="img/discord.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Discord++</div>
+Free Discord++ Unlockeds All Premium Features...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="terraria-2.html" class="external item-link item-content">
+<div class="item-media"><img src="img/Terraria.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Terraria</div>
+DIG! FIGHT! EXPLORE! BUILD! Join the community of millions of Terrarians!s
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="snapchat.html" class="external item-link item-content">
+<div class="item-media"><img src="img/snapchat.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Snapchat++</div>
+Disable read reciepts, screenshot snaps without them knowing and more.
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="adblock.html" class="external item-link item-content">
+<div class="item-media"><img src="img/adblock.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">AdsBlockMobile</div>
+Block ads all across your mobile device.
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="agar.html" class="external item-link item-content">
+<div class="item-media"><img src="img/agar.jpg" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Agar.io Hack</div>
+Agar.io Hack Unlimited Coins and More...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="spotify.html" class="external item-link item-content">
+<div class="item-media"><img src="img/spotify.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Spotify++</div>
+Spotify with no ads and unlimited skips for free...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="happychick.html" class="external item-link item-content">
+<div class="item-media"><img src="img/happychick.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Happy Chick</div>
+Happy Chick Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="youtube.html" class="external item-link item-content">
+<div class="item-media"><img src="img/youtube.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">YouTube++</div>
+YouTube++ Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="altstore.html" class="external item-link item-content">
+<div class="item-media"><img src="img/altstore.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">AltStore</div>
+AltStore Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="appcake.html" class="external item-link item-content">
+<div class="item-media"><img src="img/appcake.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">AppCake</div>
+AppCake Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="animoji.html" class="external item-link item-content">
+<div class="item-media"><img src="img/animoji.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Animoji</div>
+Animoji Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="deezer.html" class="external item-link item-content">
+<div class="item-media"><img src="img/deezer.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Deezer++</div>
+Deezer++ Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="inds.html" class="external item-link item-content">
+<div class="item-media"><img src="img/inds.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">INDS</div>
+INDS Download for Any Devices
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="zooba.html" class="external item-link item-content">
+<div class="item-media"><img src="img/zooba.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Zooba</div>
+Zooba Hack 
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="codmobile.html" class="external item-link item-content">
+<div class="item-media"><img src="img/codmobile.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Call of Duty Mobile</div>
+Call of Duty Mobile Hacks
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="badoo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/badoo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Badoo Premium</div>
+Free Badoo++ Premium Unlockeds
+<div class="item-footer">No Jailbreak or Root Requireds</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="buggy.html" class="external item-link item-content">
+<div class="item-media"><img src="img/buggy.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Youtube Premium</div>
+Youtube Premium App Injection 
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="goose.html" class="external item-link item-content">
+<div class="item-media"><img src="img/goose.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Untitled Goose Game</div>
+Untitled Goose Game Download
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="nba2k20.html" class="external item-link item-content">
+<div class="item-media"><img src="img/nba2k20.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">NBA 2K20</div>
+NBA 2K20 Mobile Download
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="aptoide.html" class="external item-link item-content">
+<div class="item-media"><img src="img/aptoide.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Aptoide </div>
+Aptoide App Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="tweak.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tweak.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TweakBox </div>
+Tweakbox App Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="disney.html" class="external item-link item-content">
+<div class="item-media"><img src="img/disney.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Disney + </div>
+Disney + Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="sword.html" class="external item-link item-content">
+<div class="item-media"><img src="img/sword.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Pokemon Sword Download</div>
+Pokemon Sword Download App Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="pro.html" class="external item-link item-content">
+<div class="item-media"><img src="img/pro.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Procreate Pocket </div>
+Procreate Pocket App Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+
+<li>
+<a href="icloud.html" class="external item-link item-content">
+<div class="item-media"><img src="img/icloud.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">iCloud Bypass</div>
+iCloud Bypass App Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+
+<li>
+<a href="bloon.html" class="external item-link item-content">
+<div class="item-media"><img src="img/bloon.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Bloon TD 6</div>
+Bloon TD 6 Download Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="crunchy.html" class="external item-link item-content">
+<div class="item-media"><img src="img/crunchy.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Crunchyroll Premium ++</div>
+Crunchyroll Premium ++ Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="hulu.html" class="external item-link item-content">
+<div class="item-media"><img src="img/hulu.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Free Hulu Plus</div>
+Free Hulu Plus Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="insta.html" class="external item-link item-content">
+<div class="item-media"><img src="img/insta.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Instagram ++ Download</div>
+Instagram ++ Download Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="smule.html" class="external item-link item-content">
+<div class="item-media"><img src="img/smule.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Smule</div>
+Smule App Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="vsco.html" class="external item-link item-content">
+<div class="item-media"><img src="img/vsco.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">VSCO</div>
+VSCO ++ Download Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="dazn.html" class="external item-link item-content">
+<div class="item-media"><img src="img/dazn.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">DAZN Download</div>
+DAZN ++ Download Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="nba.html" class="external item-link item-content">
+<div class="item-media"><img src="img/nba.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">NBA League Pass</div>
+NBA League Pass Download Injection
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="apple.html" class="external item-link item-content">
+<div class="item-media"><img src="img/apple.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Apple Arcade</div>
+Free Apple Arcade Subscription
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="app.html" class="external item-link item-content">
+<div class="item-media"><img src="img/app.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Appstore ++</div>
+Appstore ++ App Injection 
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="farm.html" class="external item-link item-content">
+<div class="item-media"><img src="img/farm.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Farming Simulator 20</div>
+Free Download With Mods
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="gps.html" class="external item-link item-content">
+<div class="item-media"><img src="img/gps.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">GPS Location Spoofer</div>
+Fake Your GPS Location iOS & Android
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="plague.html" class="external item-link item-content">
+<div class="item-media"><img src="img/plague.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Plague Inc. Download</div>
+App Injection iOS & Android
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="ponhub.html" class="external item-link item-content">
+<div class="item-media"><img src="img/pornhub.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Pornhub++</div>
+Free Pornhub Premium Unlocked...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="brazzers.html" class="external item-link item-content">
+<div class="item-media"><img src="img/brazzers.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Brazzers++</div>
+Free Brazzers Premium Unlocked...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="amongmod.html" class="external item-link item-content">
+<div class="item-media"><img src="img/amongmod.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Among Us MOD</div>
+Among Us Mobile Mod - Among Us Mod Menu Always Imposter & More No Kill Cooldown...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+
+<li>
+<a href="camfrog.html" class="external item-link item-content">
+<div class="item-media"><img src="img/camfrog.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Camfrog</div>
+Camfrog Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="tappytoon.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tappytoon.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">TappyToon</div>
+TappyToon Unlimited Free Points Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mangatoon.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mangatoon.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">MangaToon</div>
+MangaToon Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="addchat.html" class="external item-link item-content">
+<div class="item-media"><img src="img/addchat.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">AddChat</div>
+AddChat Unlimited Free Keys Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="monkey.html" class="external item-link item-content">
+<div class="item-media"><img src="img/monkey.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">MonkeyMonkoy</div>
+Monkey Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="honeycam.html" class="external item-link item-content">
+<div class="item-media"><img src="img/honeycam.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">HoneyCam</div>
+HoneyCam Unlimited Free Tokens & Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="harachat.html" class="external item-link item-content">
+<div class="item-media"><img src="img/harachat.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">HaraChat</div>
+HaraChat Unlimited Free Golds & Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="joi.html" class="external item-link item-content">
+<div class="item-media"><img src="img/joi.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Joi</div>
+Joi Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="wattpad.html" class="external item-link item-content">
+<div class="item-media"><img src="img/wattpad.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">WattPad</div>
+WattPad Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="waplog.html" class="external item-link item-content">
+<div class="item-media"><img src="img/waplog.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Waplog</div>
+Waplog Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="tapas.html" class="external item-link item-content">
+<div class="item-media"><img src="img/tapas.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Tapas</div>
+Tapas Unlimited Free Inks Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="dreame.html" class="external item-link item-content">
+<div class="item-media"><img src="img/dreame.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Dreame</div>
+Dreame Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="lovoo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/lovoo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Lovoo</div>
+Lovoo Unlimited Free Credits Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="lezin.html" class="external item-link item-content">
+<div class="item-media"><img src="img/lezin.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">LezhinComics</div>
+LezhinComics Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="hago.html" class="external item-link item-content">
+<div class="item-media"><img src="img/hago.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Hago</div>
+Hago Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="mico.html" class="external item-link item-content">
+<div class="item-media"><img src="img/mico.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Mico</div>
+Mico Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="olive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/olive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Olive</div>
+Olive Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="gaze.html" class="external item-link item-content">
+<div class="item-media"><img src="img/gaze.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Gaze</div>
+Gaze Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="coco.html" class="external item-link item-content">
+<div class="item-media"><img src="img/coco.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Coco</div>
+Coco Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="bunylive.html" class="external item-link item-content">
+<div class="item-media"><img src="img/bunylive.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">BunyLive</div>
+BunyLive Unlock Private Chat & Free Coins...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="who.html" class="external item-link item-content">
+<div class="item-media"><img src="img/who.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Who</div>
+Who Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="novelcat.html" class="external item-link item-content">
+<div class="item-media"><img src="img/novelcat.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Novelcat</div>
+Novelcat Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="bumble.html" class="external item-link item-content">
+<div class="item-media"><img src="img/bumble.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Bumble</div>
+Bumble Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="livu.html" class="external item-link item-content">
+<div class="item-media"><img src="img/livu.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">LivU</div>
+LivU Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="younow.html" class="external item-link item-content">
+<div class="item-media"><img src="img/younow.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">YouNow</div>
+YouNow Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="ablo.html" class="external item-link item-content">
+<div class="item-media"><img src="img/ablo.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Ablo</div>
+Ablo Unlimited Free Coins Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="likee.html" class="external item-link item-content">
+<div class="item-media"><img src="img/likee.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">Likee</div>
+Likee Unlimited Free Diamonds Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="starchat.html" class="external item-link item-content">
+<div class="item-media"><img src="img/starchat.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">StarChat</div>
+StarChat Unlimited Free Golds Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+<li>
+<a href="sayhi.html" class="external item-link item-content">
+<div class="item-media"><img src="img/sayhi.png" class="lazy lazy-fade-in" width="42px" height="42px" style="border-radius: 10px;"></div>
+<div class="item-inner">
+<div class="item-title">
+<div class="item-header">SayHi</div>
+SayHi Unlimited Free Points Tricks 2021...
+<div class="item-footer">No Jailbreak or Root Required</div>
+</div>
+<div class="item-after"></div>
+</div>
+</a>
+</li>
+
+</ul>
+
+</div>
+<br>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="page-content">
+<div class="fake-homescreen">
+<a href="#" class="close-button popup-close" aria-label="Cancel"></a>
+<div class="iphone-display" aria-hidden="true">
+<div class="app-icon-area">
+<div class="app-icon-region">
+<img alt="app icon" src="img/Revokes.png" class="app-icon" style="width: 33px; height: 33px;">
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="login-screen" id="my-login-screen">
+<div class="view">
+<div class="page">
+<div class="page-content login-screen-content">
+<div class="login-screen-title">Login</div>
+<div class="list">
+<ul>
+<li class="item-content item-input">
+<div class="item-inner">
+<div class="item-title item-label">Username</div>
+<div class="item-input-wrap">
+<input type="text" name="username" placeholder="Your username">
+</div>
+</div>
+</li>
+
+</ul>
+</div>
+<div class="list">
+<ul>
+<li>
+<a href="#" class="item-link list-button login-button">Sign In</a>
+</li>
+</ul>
+<div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="framework7/js/framework7.min.js"></script>
+
+<script src="js/routesd0fed0fed0fed0fe.js?23423542532343243243244=235934982894342434234324234"></script>
+
+<script src="js/app79c379c379c379c3.js?2352523234234234234234324234=2342343242542234234324324345"></script>
+<script type="text/javascript" src="js/device.class.js"></script>
+<script type="text/javascript">
+    if (localStorage.getItem('theme')) { $$("body").removeClass('theme-dark').removeClass('theme-light').removeClass('theme-dark-2').removeClass('theme-oled').addClass(localStorage.getItem('theme')); }
+    if (localStorage.getItem('color-theme')) { $$("body").addClass(localStorage.getItem('color-theme')); }
+    // var fixer = setInterval(function() {
+    //   if ($$("[id^=id]").length) {
+    //     sessionStorage.setItem('shownAds', 'yes');
+    //   } else if (!$$("[id^=id]").length && sessionStorage.getItem('shownAds') == "yes") {
+    //     console.log('Should remove shit');
+    //     $$("body").css('margin-top', '-44px');
+    //     // homeView.router.refreshPage();
+    //     sessionStorage.removeItem('shownAds');
+    //     clearInterval(fixer);
+    //   }
+    // }, 1000);
+    app.request.get('status.html', function (data) {
+      console.log(data);
+      $$(".status").text(data);
+    });
+    setInterval(function() {
+      // $$.ajax({
+      //   url: 'https://inject.vip/status.txt',
+      //   type: 'GET',
+      //   success: function(data) {
+      //     $$(".status").text(data);
+      //   }
+      // });
+      app.request.get('status.html', function (data) {
+        console.log(data);
+        $$(".status").text(data);
+      });
+    }, 5000);
+
+    var device = new Device();
+
+    $$("#device").text(device.product_name());
+    $$("#version").text(device.version());
+
+  </script>
+  
+  
+  
+  <script language="JavaScript">
+<!--
+
+//Disable right mouse click Script
+//By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="FuckYou! Don't Copy My Website!";
+
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+
+document.oncontextmenu=new Function("alert(message);return false")
+
+// --> 
+ 
+document.onkeypress = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onmousedown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+document.onkeydown = function (event) {  
+event = (event || window.event);  
+if (event.keyCode == 123) {  
+return false;  
+}  
+}  
+
+</script>
+
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+
+
+
+</body>
+
+<script src="cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.html" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+<!-- Mirrored from itweaker.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Oct 2019 05:09:02 GMT -->
+
+<!-- Mirrored from getyourhack.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 23 May 2020 11:40:06 GMT -->
+
+<!-- Mirrored from myappplug.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Dec 2023 16:48:27 GMT -->
+</html>
